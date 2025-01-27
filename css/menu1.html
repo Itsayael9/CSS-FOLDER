@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Flexbox avec Media Queries</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .menu {
+      display: flex;                 /* Utilisation de Flexbox pour le menu */
+      justify-content: center;       /* Centre les éléments horizontalement */
+      background-color: #333;        /* Couleur de fond du menu */
+      padding: 10px 0;
+    }
+
+    .menu-item {
+      padding: 15px 20px;            /* Espacement autour des éléments */
+      color: white;                  /* Couleur du texte */
+      text-align: center;            /* Centrer le texte */
+      text-decoration: none;         /* Enlever les soulignements des liens */
+    }
+
+    .menu-item:hover {
+      background-color: #575757;     /* Changer la couleur de fond au survol */
+    }
+
+    /* Media Query pour les écrans plus petits (moins de 768px) */
+    @media (max-width: 768px) {
+      .menu {
+        flex-direction: column;      /* Disposer les éléments verticalement */
+        align-items: center;         /* Centrer les éléments horizontalement */
+      }
+
+      .menu-item {
+        width: 100%;                 /* Les éléments prennent toute la largeur */
+        text-align: left;            /* Aligner le texte à gauche */
+        padding: 15px;               /* Réduire l'espacement */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="menu">
+    <a href="#home" class="menu-item">Accueil</a>
+    <a href="#about" class="menu-item">À propos</a>
+    <a href="#services" class="menu-item">Services</a>
+    <a href="#contact" class="menu-item">Contact</a>
+  </nav>
+
+</body>
+</html>

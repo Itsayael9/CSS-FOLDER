@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(197, 122, 157);
+        }
+        .conteneur {
+            height: 200px;
+            background-color: rgb(221, 199, 199);
+            padding: 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .element {
+            border: 2px solid rgb(114, 146, 151);
+            padding: 10px;
+            margin: 20px;
+            height: 20px;
+        }
+
+        .element:nth-child(2){
+            align-self: flex-start;
+        } 
+
+
+
+        .element:nth-child(2){
+            flex-shrink: 0;
+            
+        }
+       
+        
+
+    </style>
+</head>
+<body>
+    <div class="conteneur">
+        <div class="element">element 1</div>
+        <div class="element">element 2</div>
+        <div class="element">element 3</div>
+        <div class="element">element 4</div>
+        <div class="element">element 5</div>
+        <div class="element">element 6</div>
+        <div class="element">element 7</div>
+        <div class="element">element 8</div>
+    </div>
+</body>
+</html>

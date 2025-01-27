@@ -1,0 +1,23 @@
+body{
+    background-color: blueviolet;
+    background-repeat: repeat-x;
+}
+
+
+
+#img1 {
+    height: 300px; 
+    width: 200px;
+    border: 5px solid black;
+
+}
+
+#img2 {
+    height: 8cm;
+    width: 5cm;
+}
+
+#img3 {
+    height: 3in;
+    width: 2in;
+}

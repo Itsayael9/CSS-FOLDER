@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .para2 {
+        direction: rtl;
+    }
+
+    .para3 {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+    }
+    div {
+        font-size: 20px;
+        border: 2px solid white;
+        }
+    img {
+        width: 150px ; 
+        height: 100px;
+    }
+    img.top {
+        vertical-align: text-top;
+    }
+    img.buttom {
+        vertical-align: text-bottom;
+    }
+    img.middel {
+         vertical-align: middle;
+
+    }
+    #super {
+        vertical-align: super;
+    }
+    #sub {
+        vertical-align: sub;
+    }
+
+    @font-face
+    {
+        font-family: RubikWetPaint;
+        src : url(RubikWetPaint-Regular.ttf) format("truetype")
+    }
+
+    p.font {
+        font-family: RubikWetPaint ;
+
+    }
+
+    li:first-of-type +li +li
+    {
+        color: red;
+    }
+
+   p:first-of-type 
+   {
+    color: green;
+    background-color:lightgray;
+   }
+
+ 
+
+
+  
+</style>
+</head>
+<body>
+    <p>une phrase avec la direction par defaut -ltr</p>
+    <p class="para2">اية الوهابي </p>
+    <p class="para3">une phrase avec la direction -rtl</p>
+
+    <div> une <img  src="img2.jpeg" >image avec un alignment par defaut </div>
+    <div>une <img class="buttom" src="img2.jpeg">image en bas du text </div>
+    <div>une <img class="middel" src="img2.jpeg">image pae alignement au milieu </div>
+    <div>une <img class="top" src="img2.jpeg" >image par alignement haut de text</div>
+
+
+    <h3>la valeur super : x  <span id="super">2</span></h3>
+    <h3>la valeur sub : H <span id="sub">2</span> O</h3>
+
+    <p style="font-size: xx-small;">cette taille de police est extraimant petit </p>
+    <p style="font-size: x-small;">cette taille de police est tres petit</p>
+    <p style="font-size: small;">cette taille de police est est petit</p>
+    <p style="font-size: medium;">cette taille de police est moyenne </p>
+    <p style="font-size: large;">cette taille de police est grande</p>
+    <p style="font-size: x-large;">cette taille de police est tres grand</p>
+    <p style="font-size: xx-large;">cette taille de police est extraiment grande  </p>
+    <p style="font-size: smaller;">cette taille de police est plus petit</p>
+    <p style="font-size: larger;">cette taille de police est plus grande</p>
+    <p style="font-size: 100%;">cette taille de police est difini a 100%</p>
+    <p style="font-size: 20px;">cette taille de police est de 20px</p>
+
+    <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">police family serif</p>
+    <p style="font-family: Arial, Helvetica, sans-serif;">family sans serif</p>
+    <p style="font-family: consolas;"> family monosque</p>
+
+    <p class="font"> aya elouahabi </p>
+
+    <ul>
+        <li>un</li>
+        <li>deux</li>
+        <li>trois</li>
+    </ul>
+    <div class="secetion">
+        <h2>introducion </h2>
+        <p>parag1</p>
+        <p>parag2</p>
+        <p>parag3</p>
+    </div>
+
+    <div class="secetion">
+        <h2>contenue principal </h2>
+        <p>parag1</p>
+        <p>parag2</p>
+        <p>parag3</p>
+    </div>
+
+   
+</body>
+</html>

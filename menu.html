@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: blue;
+            width: 100%;
+
+        }
+
+        .form a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .form a:hover{
+            color: brown;
+        }
+
+        @media (max-width:600px)
+        {   
+            .form{
+                flex-direction: column;
+                padding: 10px;
+                
+            }
+            /* .form a {
+                float: none;
+                width: 100%;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <a href="#">
+accuil
+        </a><a href="#">
+a propos 
+        </a><a href="#">
+tutorial
+        </a><a href="#">
+faq
+        </a><a href="#">
+videos
+        </a><a href="#">
+contact
+        </a>
+    </div>
+</body>
+</html>

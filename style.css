@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    background-color: white; 
+    color: #333; 
+}
+
+
+header {
+    padding: 10px 20px;
+}
+
+/* Conteneur pour le logo et le drapeau */
+.header-top {
+    display: flex; /* Met en place un layout flex */
+    justify-content: space-between; /* Espace égal entre les éléments (logo et drapeau) */
+    width: 100%; /* Le conteneur prend toute la largeur disponible */
+    padding: 10px 0; /* Ajoute de l'espace interne vertical */
+}
+
+.logo img {
+    height: 80px; /* Fixe la hauteur des images du logo */
+}
+
+.flag img {
+    height: 80px; /* Fixe la hauteur des images du drapeau */
+}
+
+/* Navigation sous le logo et le drapeau */
+nav.main-nav {
+    width: 100%; /* La navigation s'étend sur toute la largeur */
+    padding: 10px 0; /* Ajoute de l'espace autour de la navigation */
+    background-color: #333; /* Définit un fond sombre pour la barre de navigation */
+}
+
+.main-nav ul {
+    list-style: none; /* Supprime les puces des listes */
+    display: flex; /* Utilise un layout flex */
+    justify-content: center; /* Centre les éléments horizontalement */
+}
+
+.main-nav ul li {
+    margin: 0 10px; /* Ajoute un espace horizontal entre les liens */
+}
+
+.main-nav ul li a {
+    color: white; /* Définit une couleur blanche pour les liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+.main-nav ul li a:hover {
+    color: #00bcd4; /* Change la couleur au survol */
+}
+
+/* Conteneur principal pour hero et sidebar */
+.content-wrapper {
+    display: flex; /* Met en place un layout flexible */
+    gap: 20px; /* Ajoute un espace entre les éléments */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    max-width: 1200px; /* Limite la largeur maximale */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+}
+
+/* Section hero */
+.hero {
+    flex: 3; /* Prend plus d'espace comparé à la sidebar */
+    align-items: center; /* Centre verticalement (propriété inutile ici) */
+    padding: 20px; /* Ajoute de l'espace interne */
+    background-color: white; /* Définit un fond blanc */
+    border: 1px solid #ddd; /* Ajoute une bordure grise claire */
+    border-radius: 10px; /* Ajoute des coins arrondis */
+}
+.hero img {
+    width: 100%; /* L'image occupe toute la largeur */
+    max-height: 200px; /* Limite la hauteur maximale de l'image */
+    border-radius: 10px; /* Ajoute des coins arrondis à l'image */
+}
+
+.hero .content {
+    padding-left: 20px; /* Ajoute un espace à gauche du contenu */
+}
+
+.hero .content h1 {
+    font-size: 1.8em; /* Définit une taille de police importante pour le titre */
+    margin-bottom: 10px; /* Ajoute de l'espace sous le titre */
+    color: #333; /* Couleur du titre en gris foncé */
+}
+
+.hero .content p {
+    color: #666; /* Couleur du paragraphe en gris clair */
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1; /* Prend moins d'espace comparé à la section hero */
+    display: flex; /* Utilise un layout flex */
+    flex-direction: column; /* Dispose les éléments verticalement */
+    gap: 20px; /* Ajoute de l'espace entre les sections */
+    padding: 20px; /* Ajoute de l'espace interne */
+    background-color: #fff; /* Définit un fond blanc */
+    border: 1px solid #ddd; /* Ajoute une bordure grise claire */
+    border-radius: 10px; /* Ajoute des coins arrondis */
+}
+
+.sidebar h2 {
+    font-size: 1.2em; /* Définit la taille du titre */
+    color: #333; /* Couleur du titre en gris foncé */
+    margin-bottom: 10px; /* Ajoute de l'espace sous le titre */
+    border-bottom: 2px solid #00bcd4; /* Ajoute une bordure colorée en bas */
+    padding-bottom: 5px; /* Ajoute de l'espace sous le texte */
+}
+
+.sidebar ul {
+    list-style: none; /* Supprime les puces des listes */
+    padding: 0; /* Supprime les marges internes */
+}
+
+.sidebar ul li {
+    margin: 5px 0; /* Ajoute un espace vertical entre les items */
+    color: #555; /* Couleur du texte en gris moyen */
+    cursor: pointer; /* Change le curseur au survol */
+}
+
+.sidebar ul li:hover {
+    color: #00bcd4; /* Change la couleur au survol */
+}
+
+/* Section spotlight */
+.spotlight {
+    padding: 20px; /* Ajoute de l'espace interne */
+    text-align: center; /* Centre le texte */
+    background-color: white; /* Fond blanc */
+    border: 1px solid #ddd; /* Bordure grise claire */
+    border-radius: 10px; /* Coins arrondis */
+    margin: 20px auto; /* Ajoute un espacement vertical et centre horizontalement */
+    max-width: 1200px; /* Largeur maximale */
+}
+
+.spotlight-items {
+    display: flex; /* Mise en page flexible */
+    justify-content: space-around; /* Distribution égale des items */
+    gap: 10px; /* Espacement horizontal entre les items */
+}
+
+.spotlight-item {
+    width: 30%; /* Chaque élément occupe 30% de la largeur */
+    text-align: center; /* Texte centré */
+}
+
+.spotlight-item img {
+    width: 100%; /* Image occupe toute la largeur */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
+}
+
+.spotlight-item p {
+    margin-top: 10px; /* Espacement au-dessus du paragraphe */
+    color: #555; /* Texte gris moyen */
+}
+
+/* Pied de page */
+footer {
+    background-color: #333; /* Fond sombre */
+    color: #fff; /* Texte blanc */
+    text-align: center; /* Centre le texte */
+    padding: 10px; /* Espacement interne */
+}
+
+footer ul {
+    list-style: none; /* Supprime les puces des listes */
+    display: flex; /* Mise en page flexible */
+    justify-content: center; /* Centre les items */
+    padding: 10px 0; /* Espacement interne vertical */
+}
+
+footer ul li {
+    margin: 0 10px; /* Ajoute un espacement horizontal */
+}
+
+footer ul li a {
+    color: white; /* Couleur des liens blanche */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: color 0.3s; /* Ajoute une transition douce */
+}
+
+footer ul li a:hover {
+    color: #00bcd4; /* Change la couleur au survol */
+}
+
+/* Media Queries pour les appareils mobiles */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Affiche les sections en colonne */
+        padding: 10px; /* Réduit l'espace interne */
+    }
+
+    .hero {
+        flex: none; /* Désactive le partage d'espace */
+        margin-bottom: 20px; /* Espacement sous Hero */
+    }
+
+    .sidebar {
+        flex: none; /* Désactive le partage d'espace */
+        width: 100%; /* Sidebar prend toute la largeur */
+        margin-bottom: 20px; /* Espacement sous Sidebar */
+        padding: 0; /* supprimer le  padding */
+    }
+
+    .spotlight-items {
+        flex-direction: column; /* Affiche les items en colonne */
+    }
+
+    .spotlight-item {
+        width: 100%; /* Items en pleine largeur */
+        margin-bottom: 20px; /* Espacement sous chaque item */
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Affiche les liens en colonne */
+    }
+
+    .main-nav ul li {
+        margin: 10px 0; /* Espacement vertical entre les liens */
+    }
+
+    hero .content h1 {
+        font-size: 1.4em; /* Réduit la taille du titre */
+    }
+
+    .spotlight-item img {
+        max-height: 180px; /* Limite la hauteur des images */
+    }
+
+    footer ul {
+        flex-direction: column; /* Affiche les liens en colonne */
+        align-items: center; /* Centre les liens */
+    }
+
+    footer ul li {
+        margin-bottom: 10px; /* Espacement vertical entre les liens */
+    }
+}
